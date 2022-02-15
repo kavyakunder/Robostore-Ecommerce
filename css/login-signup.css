@@ -72,8 +72,8 @@ body {
   justify-content: space-between;
   padding: 5px 0;
 }
-button.signin-btn {
-  width: 100%;
+.btn-entry {
+  width: 90%;
   padding: 12px 10px;
   border: none;
   margin-bottom: 10px;
