@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://robocon-ui.netlify.app/styles.css" />
+    <link rel="stylesheet" href="../css/product-page.css" />
+    <title>Product Listing Page</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo-wishlist-title">
+        <img
+          class="navbar-logo"
+          src="../../assets/brand-logo.png"
+          alt="brand-logo"
+        />
+        <!-- <h3 class="store-name">RoboStore</h3> -->
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a class="link-undecorated" href="#">Home</a></li>
+          <li><a class="link-undecorated" href="#">Shop </a></li>
+          <li><a class="link-undecorated" href="#">Contact</a></li>
+        </ul>
+        <i class="navbar-icons far fa-heart fa-lg"></i>
+        <i class="navbar-icons fas fa-shopping-cart fa-lg"></i>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="side-category">
+        <div class="product-cat cat-margin">
+          <h3>Product Categories</h3>
+          <select
+            name="category"
+            id="category"
+            placeholder="Select a category"
+            class="select"
+          >
+            <option value="" disabled selected hidden>
+              Select your option
+            </option>
+            <option value="Batteries">Batteries</option>
+            <option value="Displays">Displays</option>
+            <option value="Wheels">Wheels</option>
+            <option value="Motors">Motors</option>
+            <option value="Electronics">Electronics</option>
+            <option value="PCB">PCB</option>
+          </select>
+        </div>
+        <div class="filter cat-margin">
+          <h3>Filter by Price</h3>
+          <input type="range" max="100" min="0" value="50" />
+          <button class="btn-filter">Filter</button>
+          <p>Price:Rs. 500-Rs.1000</p>
+        </div>
+        <div class="rating cat-margin">
+          <h3>Average Rating</h3>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="compare-products cat-margin">
+          <h3>Compare Products</h3>
+          <p>No product to compare</p>
+          <div class="comp-btns">
+            <a href="Clear All"></a>
+            <button class="btn-compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="category-navbar">
+        <div class="category-bar">
+          <i class="fas fa-list fa-2x"> Showing 1–20 of 412 results</i>
+          <div class="sort-by">
+            <p>Sort by:</p>
+            <select name="category" id="category" class="select">
+              <option value="Relevance">Relevance</option>
+              <option value="Sort By Popularity">Sort By Popularity</option>
+              <option value="Average Rating">Average Rating</option>
+              <option value="Sort By Latest">Sort By Latest</option>
+              <option value="Sort by Price High to Low">
+                Sort by Price High to Low
+              </option>
+              <option value="Sort by Price Low to High">
+                Sort by Price Low to High
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="container">
+          <!-- first card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to card-options</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star grey"></i>
+                  <i class="fas fa-star grey"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star grey"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fifth-card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sixth card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- seventh-card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- eight card -->
+          <div class="card">
+            <div class="imgBx">
+              <img
+                class="card-img"
+                src="../assets/product-img.jpg"
+                alt="product-img"
+              />
+              <ul class="action">
+                <li>
+                  <span class="card-options">Add to Wishlist</span>
+                  <i class="far fa-heart"></i>
+                </li>
+                <li>
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="card-options">Add to Cart</span>
+                </li>
+                <li>
+                  <i class="far fa-eye"></i>
+                  <span class="card-options">View Only</span>
+                </li>
+              </ul>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="content">
+              <div class="productName">
+                <p>Arduino Uno with Breadboard</p>
+                <p class="product-brand">Brand:Generic</p>
+              </div>
+              <div class="price-rating">
+                <p>₹480</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
